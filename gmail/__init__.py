@@ -1,9 +1,5 @@
-
-
 """
-
 GMail! Woo!
-
 """
 
 __title__ = 'gmail'

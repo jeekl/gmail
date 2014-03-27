@@ -106,8 +106,6 @@ class Message():
         if name not in ['[Gmail]/Bin', '[Gmail]/Trash']:
             self.delete()
 
-
-
     def archive(self):
         self.move_to('[Gmail]/All Mail')
 
@@ -172,7 +170,6 @@ class Message():
             Attachment(attachment) for attachment in self.message._payload
                 if not isinstance(attachment, basestring) and attachment.get('Content-Disposition') is not None
         ]
-        
 
     def fetch(self):
         if not self.message:
